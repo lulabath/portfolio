@@ -52,7 +52,11 @@ a{text-decoration: none;
     font-size: 1em;
 }
 a:hover{
+    padding: 10px 20px;
+    border:solid 1px;
+    border-radius: #458a6d 80px;
     color:#458a6d;
+    box-shadow: #ffffff 5px;
 }
 .links{ 
     font-size:18px;
@@ -447,7 +451,7 @@ span{margin: 15px 10px 35px 0px;
     background-color: #458a6d;
     margin: 50px 0px;
     font-size: 1.5rem;
-
+    outline: none;
 }
 #form-text{
     display: flexbox;
@@ -461,14 +465,19 @@ span{margin: 15px 10px 35px 0px;
     margin-top: 5px;
 }
 input{
-    border: 1px;
+    input-security:auto;
+    border: 0px;
     border-radius:15px;
     padding: 10px;
     justify-content:center;
     background-color:rgba(202, 199, 199, 0.274);
     margin: 10px 0px;
+    outline: none;
 }
-
+input:focus{
+    border:solid 1px #458a6d;
+    box-shadow: 7px #ffffff;
+}
 .contenedor-label-2{
     display:block;
 }
