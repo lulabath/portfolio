@@ -52,29 +52,32 @@ a{text-decoration: none;
     font-size: 1em;
 }
 a:focus{
-    padding: 10px 20px;
-    border:solid 1px;
-    border-radius:80px #0d0e0d;
     color:#458a6d;
-    box-shadow: #ffffff 10px;
+    padding: 10px 20px;
+    border: solid 1px #458a6d;
+    border-radius:80px;
+    box-shadow: #458a6d 0px 0px 3px 0px;
 }
-.links{ 
-    font-size:18px;
-    padding:10px 20px;
-    color: #000000;
-    justify-content: center;
-}
-
 a[href="#contacto"]{
     color:white;
     padding: 10px 20px;
     border-radius: 80px;
     background-color:#458a6d;
 }
-a[href="#contacto"]:focus{
-    box-shadow: rgba(166, 228, 199, 0.25) 0px 30px 60px -12px;
+a[href="#contacto"]:hover{
+    background-color: #62a388;
+}
+a[href="#contacto"]:active{
+    background-color: #387e61;
+    box-shadow: #458a6d  3px;
 }
 
+.links{ 
+    font-size:18px;
+    padding:10px 20px;
+    color: #000000;
+    justify-content: center;
+}
 h1{
     display: flex;
     font-size: 4em;
@@ -191,10 +194,24 @@ span{
     margin-left: 5px;
     width: 150px;
     text-align:center;
+    border: 0;
+}
+.boton-presentacion{
+    color:white;
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color:#458a6d;
 }
 .boton-presentacion:hover{
-    color: black;
+    background-color: #62a388;
 }
+.boton-presentacion:active{
+    color:#ffffff;
+    background-color: #387e61;
+    box-shadow: #458a6d  3px;
+}
+
+
 .contenedor-imagen{
     max-width: 900px;
     width: 30%;
@@ -432,6 +449,9 @@ span{margin: 15px 10px 35px 0px;
     flex-direction: column;
     margin-left:50px;
 }
+.red-contacto:hover{
+    color: #458a6d;
+}
 
 .form-text{
     margin: 60px 0px 10px 15px;
@@ -475,9 +495,10 @@ input{
     outline: none;
 }
 input:focus{
+    box-shadow:#458a6d 0px 0px 3px 0px;
     border:solid 1px #458a6d;
-    box-shadow: 7px #ffffff;
 }
+
 .contenedor-label-2{
     display:block;
 }
@@ -528,17 +549,17 @@ span.footer-texto{
     margin: 2% 0%;}
 
 .fa-github{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 2% 0%;
     color:#458a6d;
-    padding: 6px;
+    padding: 8px;
     border: 1px;
     border-radius: 100%;
     background-color: #ffffff;
 }
 .fa-github:hover{
     font-size:1.5rem;
-    padding: 5px;
+    padding: 10px;
     border: 1px;
     border-radius: 100%;
     color: #ffffff;
@@ -546,35 +567,35 @@ span.footer-texto{
 }
 
 .fa-linkedin-in{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 2% 0%;
     color:#458a6d;
-    padding: 6px;
+    padding: 8px;
     border: 1px;
     border-radius: 100%;
     background-color: #ffffff;
 }
 .fa-linkedin-in:hover{
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 10px;
     border: 1px;
     border-radius: 100%;
     color: #ffffff;
     background-color: #458a6d;
 }
 
-.fa-envelope{
-    font-size: 1.5rem;
+.fa-phone{
+    font-size: 1.3rem;
     margin: 2% 0%;
     color:#458a6d;
-    padding: 6px;
+    padding: 8px;
     border: 1px;
     border-radius: 100%;
     background-color: #ffffff;
 }
-.fa-envelope:hover{
+.fa-phone:hover{
     font-size: 1.5rem;
-    padding: 3px;
+    padding: 10px;
     border: 1px;
     border-radius: 100%;
     color: #ffffff;
