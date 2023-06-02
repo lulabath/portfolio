@@ -132,7 +132,7 @@ span{
     width: 87vw;
     margin:0;
     background-color:white;
-    padding: 110px 50px 140px 200px;
+    padding: 110px 25px 140px 120px;
 }
 
 @media (max-width: 950px){
@@ -429,15 +429,60 @@ span{
     border-radius: 15px;
     border:1px solid rgb(202, 199, 199);
 }
+@media(max-width:700px){
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 30px 0;
+        margin: 0px;
+        height: 120vh;
+        border: none;
+        width: 100%;
+    }
+    .contactame{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size:0.8em;
+    }
+    .iconos-contacto{
+        padding-right: 0px;
+        margin-left: 0%;
+    }
+}
+@media(max-width:1150px){
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align:center;
+        align-items:left;
+        padding: 0px 60px 80px 60px;
+        margin:0px;
+        width: 100%;
+        height: 120vh;
+        border: none;
+        border-radius: 0;
+    }
+    .contactame{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .contactame{
     display: flex;
     flex-direction: column;
     width: 40%;
     margin: 60px 15px 10px 0px;
 }
+
 .h2-contacto{
-    margin: 20px;
-    font-size: 3rem;
+    margin-left: 0px;
+    font-size: 2.5rem;
 }
 span{margin: 15px 10px 35px 0px;
     font-size: 1rem;
@@ -447,7 +492,8 @@ span{margin: 15px 10px 35px 0px;
 }
 .iconos-contacto{
     flex-direction: column;
-    margin-left:50px;
+    margin-left:10px;
+
 }
 .red-contacto:hover{
     color: #458a6d;
