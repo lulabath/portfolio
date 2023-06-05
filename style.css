@@ -74,7 +74,7 @@ a[href="#contacto"]:active{
 .presentacion{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 45%;
     text-align: center;
 }
 .h1-presentacion{
@@ -581,6 +581,16 @@ span{margin: 15px 10px 35px 0px;
     .iconos-contacto{
         padding-right: 0px;
         margin-left: 0%;
+    }
+    .p-presentacion{
+        margin-left: 50px;
+    }
+    .h2-presentacion{
+        justify-content: center;
+    }
+    .boton-presentacion{
+        justify-content: center;
+        margin-left: 25px;
     }
 }
 @media(max-width:575px){
