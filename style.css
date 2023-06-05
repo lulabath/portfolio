@@ -12,7 +12,7 @@ header{
     background-color: white;
     margin: 0%;
     padding:15px 10px 15px 15px;
-    width: 100vw;
+    width: 100%;
     box-shadow: 0 0 30px 0 rgb(204, 204, 204);
     top:0;
     position: sticky;
@@ -28,6 +28,7 @@ ul{
     justify-content: center;
     font-size: 1.1em;
     height: 30px;
+    padding: 0px;
 }
 a{text-decoration: none;
     color: black;
@@ -65,19 +66,15 @@ a[href="#contacto"]:active{
 .contenedor-presentacion{
     display:flex;
     align-items:center;
-    height: 60vh;
-    width: 87vw;
+    justify-content: center;
     margin:0;
     background-color:white;
-    padding: 110px 25px 140px 120px;
+    padding: 0px 25px 140px 120px;
 }
 .presentacion{
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 40%;
-    margin-right: 50px;
-    margin-left:100px;
+    width: 60%;
     text-align: center;
 }
 .h1-presentacion{
@@ -94,7 +91,6 @@ a[href="#contacto"]:active{
     margin: 0;
     font-size: 1em;
     padding: 0;
-    width: 60%;
 }
 .boton-presentacion{
     font-size: 1rem;
@@ -118,7 +114,7 @@ a[href="#contacto"]:active{
 }
 .contenedor-imagen{
     max-width: 900px;
-    width: 30%;
+    width: 40%;
     margin:250px 0 250px 60px;
 }
 .imagen-animada{
@@ -132,7 +128,7 @@ a[href="#contacto"]:active{
     flex-direction: column;
     margin: 0;
     padding: 100px 0px;
-    width: 99vw;
+    width: 100%;
     background-color: rgb(241, 242, 245);
     text-align: center;
     justify-content: right;
@@ -170,7 +166,7 @@ a[href="#contacto"]:active{
     display: flex;
     flex-direction: column;
     width: 87vw;
-    padding: 110px 0;
+    padding: 0 0 110px 0;
     background-color:white;
     text-align: center;
     justify-content: center;
@@ -245,7 +241,7 @@ a[href="#contacto"]:active{
     align-items: center;
     color: #000000;
     padding: 110px 0px;
-    width: 99.9vw;
+    width: 100vw;
 }
 .p-cita{
     color: #ffffff;
@@ -311,24 +307,13 @@ a[href="#contacto"]:active{
     justify-content: space-between;
     margin:10px 50px 0px 0px;
 }
-.button-form{
-    border-color: #056159;
-    border-radius: 30px;
-    padding: 10px 30px;
-    color: #ffffff;
-    background-color: #056159;
-    margin: 50px 0px;
-    font-size: 1.5rem;
-    outline: none;
-}
 .boton-form{
 font-size: 1rem;
 color: white;
 padding: 10px 20px;
 border-radius: 80px;
 background-color:#056159;
-margin-top: 40px;
-margin-left: 5px;
+margin-top: 40px 0px 30px 5px;
 width: 150px;
 text-align:center;
 border: 0;
@@ -512,111 +497,7 @@ span{margin: 15px 10px 35px 0px;
 }
 
 /*MEDIA QUERYS*/
-@media(max-width:215px){
-    .cita{
-        padding: 20px;
-    }
-}
-@media (max-width:251px){
-    h1{font-size:1.5rem;}
-}
-@media(max-width:400px){
-    .contenedor-imagen{
-        width: 150px;
-    margin-top: 100px;}
-    .contenedor-presentacion{
-        height: 550px;
-        justify-content: center;
-        margin: 100px 0px;
-    }
-    .p-presentacion{
-        justify-content:center;
-        margin-left: 15px;
-    }
-    .h1-presentacion{
-        justify-content: center;
-    }
-    .boton-presentacion{
-        display: none;
-    }
-}
-@media (max-width:500px){
-    h1{
-        font-size: 2rem;
-    }
-    .contenedor-tarjetas{
-    margin: 0px;
-    }
-}
-@media(max-width:575px){
-    ul{
-        font-size:0.07em;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        padding-top: 100px;
-    }
-    .iconos-footer{
-        display: none;
-    }
-}
-@media(max-width:700px){
-    .contenedor-contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        padding: 30px 0;
-        margin: 0px;
-        height: 120vh;
-        border: none;
-        width: 100%;
-    }
-    .contactame{
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        font-size:0.8em;
-    }
-    .iconos-contacto{
-        padding-right: 0px;
-        margin-left: 0%;
-    }
-}
-@media (max-width:900px){
-    header{
-        display:none;
-    }
-    .h1-presentacion{
-        justify-content: center;}
-    .contenedor-imagen{
-        width: 250px;
-        border-radius: 0.1;
-        transition: 0.5s;
-        margin:100px;}
-    .seccion-conocimientos{
-        margin-top:100px;
-    }
-}
-@media (max-width: 950px){
-    .contenedor-presentacion{
-        flex-direction: column;
-        transition: 0.5s;
-        margin-top: 10px;
-        margin-bottom: 180px;
-        padding: 50px;
-        justify-content: space-between;
-        align-items: center;}
-}
-@media(max-width:1017px){
-    .h1-presentacion{
-        padding: 0px;
-        margin: 0px;
-        font-size: 3.5rem;
-    }
-}
+
 @media(max-width:1150px){
     .contenedor-contacto{
         display: flex;
@@ -637,3 +518,153 @@ span{margin: 15px 10px 35px 0px;
         align-items: center;
     }
 }
+@media(max-width:1017px){
+    .h1-presentacion{
+        padding: 0px;
+        margin: 0px;
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 950px){
+    .contenedor-presentacion{
+        flex-direction: column;
+        transition: 0.5s;
+        margin-top: 10px;
+        margin-bottom: 180px;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;}
+}
+@media (max-width:900px){
+    header{
+        display:none;
+    }
+    .h1-presentacion{
+        justify-content: center;}
+    .contenedor-imagen{
+        width: 250px;
+        border-radius: 0.1;
+        transition: 0.5s;
+        margin:150px;
+        justify-content: center;
+    }
+    .seccion-conocimientos{
+        margin-top:100px;
+    }
+}
+@media(max-width:700px){
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0px 0px 50px 0px;
+        margin-top: 0px;
+        height: 120vh;
+        border: none;
+        width: 100%;
+    }
+    .contactame{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size:0.8em;
+    }
+    .form-text{
+        justify-content: center;
+    }
+    .contenedor-label-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconos-contacto{
+        padding-right: 0px;
+        margin-left: 0%;
+    }
+}
+@media(max-width:575px){
+    ul{
+        font-size:0.07em;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding-top: 100px;
+    }
+    .iconos-footer{
+        display: none;
+    }
+    .h2-contacto{
+        font-size:2rem;
+    }
+    h2{
+        font-size: 2rem;
+        display: block;
+    }
+    .seccion-footer{
+        margin-top: 50px;
+    }
+}
+@media (max-width:500px){
+    h1{
+        font-size: 2rem;
+    }
+    .contenedor-tarjetas{
+    margin: 0px;
+    }
+    .contenedor-presentacion{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .p-presentacion{
+        margin-left:40px
+    }
+    .boton-presentacion{
+        font-size: 0.5rem;
+        padding: 5px;
+        width: 60px;
+        margin-left:70px
+    }
+    .seccion-conocimientos{
+        margin-top:0;
+        padding-top: 0;
+    }
+}
+@media(max-width:400px){
+    .contenedor-imagen{
+        width: 150px;
+        margin-top: 100px;}
+    .contenedor-presentacion{
+        height: 550px;
+        justify-content: center;
+        margin: 100px 0px;
+    }
+    .p-presentacion{
+        justify-content:center;
+        margin-left: 15px;
+    }
+    .h1-presentacion{
+        justify-content: center;
+    }
+    .boton-presentacion{
+        display: none;
+    }
+    .footer-texto{
+        padding-top: 15px;
+    }
+}
+@media (max-width:251px){
+    h1{font-size:1.5rem;}
+}
+@media(max-width:215px){
+    .cita{
+        padding: 20px;
+    }
+}
+
+
+
+
